@@ -1,0 +1,28 @@
+/**
+ * @references
+ *  http://phaser.io/docs/2.3.0/Phaser.State.html
+ *
+ */
+export class {{ state }} {
+    constructor(game) {
+        game.state.add("{{ name }}", this, !1);
+    }
+    /**
+     * States
+     */
+    create() {}
+    init() {}
+    loadRender() {}
+    loadUpdate() {}
+    paused() {}
+    pauseUpdate() {}
+    preload() {}
+    render() {}
+    resize() {}
+    shutdown() {}
+    update() {}
+
+    /**
+     * Helpers
+     */
+}
