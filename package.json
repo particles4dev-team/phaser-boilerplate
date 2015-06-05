@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "start": "gulp",
+    "cordova": "gulp cordova"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.7.5",
     "browserify": "^10.2.1",
+    "fastclick": "^1.0.6",
     "gulp": "^3.8.11",
     "gulp-notify": "^2.2.0",
     "gulp-util": "^3.0.4",

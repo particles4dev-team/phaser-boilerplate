@@ -18,7 +18,8 @@ module.exports = {
     markup: {
         src: [
             "node_modules/phaser/build/phaser.js",
-            src + "/www/**"
+            src + "/www/**",
+            src + "/app/**"
         ],
         dest: dest,
         // https://medium.com/@mattdesl/gulp-and-browserify-shim-f1c587cb56b9 
@@ -33,5 +34,17 @@ module.exports = {
             dest: dest,
             outputName: 'app.js'
         }]
+    },
+    cordova: {
+        js: [
+            "node_modules/phaser/build/phaser.js",
+            dest + "/app.js"
+        ],
+        assets: [
+            src + "/assets/**"
+        ],
+        css: [],
+        index: "",
+        path: "../cordova/www/"
     }
 };
